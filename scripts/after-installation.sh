@@ -25,5 +25,5 @@ fatal() {
 
 if [[ -d "/etc/nginx" ]]; then
     info "Restarting NGINX Server"
-    service nginx Restarting
+    service nginx restart
 fi

@@ -23,7 +23,9 @@ fatal() {
   echo -e "PRE: [FATAL] $*"
 }
 
+info "Check if /data directory exist, if not, create the directory"
 mkdir -p /data
 
+info "Check if /data/www directory exist, if not, create the directory"
 mkdir -p /data/www
 

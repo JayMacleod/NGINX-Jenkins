@@ -29,6 +29,7 @@ if [[ -f "/data/www/index.html" ]]; then
     rm -rf /data/www/index.html
 fi
 
+info "Copying index.html directory to /data/www"
 cp index.html /data/www/
 
 if [[ -f "/etc/nginx/nginx.conf" ]]; then
@@ -37,6 +38,7 @@ if [[ -f "/etc/nginx/nginx.conf" ]]; then
     rm -rf /etc/nginx/nginx.conf
 fi
 
+info "Copying nginx.conf directory to /etc/nginx"
 cp ./provision/NGINX/nginx.conf /etc/nginx
 
 
