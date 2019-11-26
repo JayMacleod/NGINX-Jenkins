@@ -50,3 +50,5 @@ fi
 info "Copying example.com to /etc/nginx/sites-available/"
 cp ./provision/NGINX/example.com /etc/nginx/sites-available/
 
+info "Synbolic link for example.com on sites-available to sites-enabled"
+ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
