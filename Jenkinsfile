@@ -17,6 +17,11 @@ pipeline {
 
         stage('Deploy') {
             steps {
+
+                timeout (time: 2, unit: 'MINUTES') {
+                    sh 'chmod 775 ./scripts/*'
+                }
+
                 timeout (time: 5, unit: 'MINUTES') {
                     sh 'sudo ./scripts/before-installation.sh'
                 }
