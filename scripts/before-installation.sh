@@ -29,3 +29,9 @@ mkdir -p /data
 info "Check if /data/www directory exist, if not, create the directory"
 mkdir -p /data/www
 
+info "Check if /data/www/exmaple.com directory exist, if not, create the directory"
+mkdir -p /data/www/example.com
+
+info "Check if /data/www/example.com/public_html directory exist, if not, create the directory"
+mkdir -p /data/www/example.com/public_html
+
