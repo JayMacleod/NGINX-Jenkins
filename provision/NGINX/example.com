@@ -18,7 +18,7 @@ server {
 	#
 	# include snippets/snakeoil.conf;
 
-	root /data/www/exmaple.com/public_html;
+	root /data/www/example.com/public_html;
     index index.html index.htm;
 
 	server_name exmaple.com www.example.com;
@@ -26,6 +26,6 @@ server {
 	location / {
 		# First attempt to serve request as file, then
 		# as directory, then fall back to displaying a 404.
-		try_files $uri $uri/ index.html;
+		try_files $uri $uri/ =404;
 	}
 }
