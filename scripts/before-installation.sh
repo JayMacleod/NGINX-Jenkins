@@ -38,6 +38,3 @@ mkdir -p /data/www/example.com/public_html
 info "Installing npm and node"
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 
-apt install nodejs -y
-
-

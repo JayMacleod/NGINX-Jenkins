@@ -26,7 +26,7 @@ fatal() {
 if [[ -f "/data/www/index.html" ]]; then
     info "Index.html Already Exist"
     warn "Removing Old Index.html"
-    rm -rf /data/www/example.com/public_html/index.html
+    rm -rf /data/www/example.com/build
 fi
 
 info "Copying index.html directory to /data/www"
