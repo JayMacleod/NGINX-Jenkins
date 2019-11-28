@@ -29,7 +29,7 @@ if [[ -f "/data/www/index.html" ]]; then
     rm -rf /data/www/example.com/build
 fi
 
-info "Copying index.html directory to /data/www"
+info "Copying build directory to /data/www/example.com"
 cp -R main/build /data/www/example.com/
 
 if [[ -f "/etc/nginx/nginx.conf" ]]; then
