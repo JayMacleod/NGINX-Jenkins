@@ -7,7 +7,7 @@ pipeline {
             steps {
                 echo 'Building ...'
                 sh 'npm install --prefix main/'
-                sh 'npm run-script build --prefix main/'
+                sh 'npm react-scripts build --prefix main/'
             }
         }
 
