@@ -6,6 +6,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building ...'
+                sh 'npm install --prefix main/'
+                sh 'npm build --prefix main/'
             }
         }
 

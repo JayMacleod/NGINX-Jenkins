@@ -35,3 +35,9 @@ mkdir -p /data/www/example.com
 info "Check if /data/www/example.com/public_html directory exist, if not, create the directory"
 mkdir -p /data/www/example.com/public_html
 
+info "Installing npm and node"
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+
+apt install nodejs -y
+
+

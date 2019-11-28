@@ -18,7 +18,7 @@ server {
 	#
 	# include snippets/snakeoil.conf;
 
-	root /data/www/example.com/public_html;
+	root /data/www/example.com/build;
     index index.html index.htm;
 
 	server_name exmaple.com www.example.com;
