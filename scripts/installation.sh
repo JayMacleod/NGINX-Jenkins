@@ -30,7 +30,7 @@ if [[ -f "/data/www/index.html" ]]; then
 fi
 
 info "Copying index.html directory to /data/www"
-cp -R build /data/www/example.com/
+cp -R main/build /data/www/example.com/
 
 if [[ -f "/etc/nginx/nginx.conf" ]]; then
     info "NGINX Conf Already Exist"
