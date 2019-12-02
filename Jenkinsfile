@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {server2}
 
     stages {
 
