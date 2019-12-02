@@ -21,6 +21,8 @@ pipeline {
             steps {
 
                 timeout (time: 2, unit: 'MINUTES') {
+                    sh 'scp -i mac-syed-key.pem ./* ubuntu@172.31.25.144:/home/ubuntu'
+                    sh 'ssh -i mac-syed-key.pem ubuntu@172.31.25.144'
                     sh 'chmod 775 ./scripts/*'
                 }
 
@@ -34,6 +36,10 @@ pipeline {
 
                 timeout (time: 5, unit: 'MINUTES') {
                     sh 'sudo ./scripts/after-installation.sh'
+                }
+
+                timeout (time: 2, unit: 'MINUTES') {
+                    sh 'rm -rf *'
                 }
             }
         }
