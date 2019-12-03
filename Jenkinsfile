@@ -37,7 +37,7 @@ pipeline {
                 }
 
                 timeout (time: 2, unit: 'MINUTES') {
-                    sh 'rm -rf *'
+                    sh 'rm -rf ./*'
                 }
             }
         }
